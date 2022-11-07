@@ -1,0 +1,23 @@
+[
+    {
+        "menu" : "Lançamentos",
+        "slug" : "lancamento",
+        "link" : "lancamentos",
+        "icon" : "business",
+        "subs" :  [7039, 7038]
+    },
+    {
+        "menu" : "Imóveis",
+        "slug" : "imovel",
+        "link" : "imoveis",
+        "icon" : "home",
+        "subs" : [6662, 6663, 6664, 6665, 6666, 6667, 6669, 6670]
+    },
+    {
+        "menu" : "Aluguel",
+        "slug" : "aluguel",
+        "link" : "aluguel",
+        "icon" : "deck",
+        "subs" : [6671]
+    }
+]

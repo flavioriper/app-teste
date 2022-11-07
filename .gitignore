@@ -1,0 +1,7 @@
+*.bk
+*.log
+/vendor
+
+!/wp-content/uploads/.htaccess
+!/wp-content/webp-express/webp-images/uploads/.htaccess
+!/wp-content/webp-express/webp-images-bigger-than-source/uploads/.htaccess

@@ -1,0 +1,213 @@
+[
+   {
+        "slug"  : "localizacao",
+        "group":"Localização",
+        "fields": [
+            {
+                "name" : "localizacao_cep",
+                "label" : "CEP",
+                "required": true
+            },
+            {
+                "name" : "localizacao_endereco",
+                "label" : "Endereço",
+                "required": true
+            },
+            {
+                "name" : "localizacao_numero",
+                "label" : "Número",
+                "required": true
+            },
+            {
+                "name" : "localizacao_bairro",
+                "label" : "Bairro",
+                "required": true
+            },
+            {
+                "name" : "localizacao_estado",
+                "label" : "Estado",
+                "required": true,
+                "type": "select"
+            },
+            {
+                "name" : "localizacao_cidade",
+                "label" : "Cidade",
+                "required": true,
+                "type": "select"
+            }
+        ]
+    },
+
+    {
+        "slug"  : "informacoes",
+        "group" : "Informações",
+        "fields": [
+            {
+                "name" : "info_titulo",
+                "label" : "Título do anúncio ",
+                "required": true
+            },
+            {
+                "name" : "info_titulo",
+                "label" : "Título do anúncio ",
+                "required": true
+            },
+            {
+                "name" : "perfil_do_imovel",
+                "label" : "Perfil do imovel ",
+                "required": true,
+                "type": "select",
+                "options": [
+                    "Residencial",
+                    "Comercial",
+                    "Residencial/Comercial",
+                    "Industrial",
+                    "Rural",
+                    "Temporada"
+                ]
+            },
+            {
+                "name" : "codigo",
+                "label" : "Código"
+            },
+            {
+                "name" : "info_descricao",
+                "label" : "Descrição",
+                "type": "textarea"
+            }
+        ]
+    },
+    
+    {
+        "slug"  : "unidades",
+        "group" : "Unidades",
+        "fields": [
+            {
+                "name": "unidades",
+                "type": "repeater",
+                "rows": [
+                    {
+                        "name": "numero_da_unidade",
+                        "label": "Número da unidade",
+                        "required": true
+                    },
+                    {
+                        "name"  : "tipo_de_unidade",
+                        "label" : "Tipo de unidade",
+                        "type"  : "select",
+                        "options": [
+                            "Apartamento",
+                            "Cobertura"
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name"  : "area_total",
+                        "label" : "Área total",
+                        "type"  : "number"
+                    },
+                    {
+                        "name"  : "quartos",
+                        "label" : "Quartos",
+                        "type"  : "number",
+                        "required": true
+                    },
+                    {
+                        "name"  : "vagas",
+                        "label" : "Vagas",
+                        "type"  : "number",
+                        "required": true
+                    },
+                    {
+                        "name"  : "faixa_de_preco",
+                        "label" : "Faixa de preço",
+                        "type"  : "taxonomy",
+                        "taxonomy": "faixa_preco",
+                        "style" : "select",
+                        "required": true
+                    },
+                    {
+                        "name"  : "valor_da_unidade",
+                        "label" : "Valor da unidade"
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "slug"  : "area_comun",
+        "group" : "Área Comum",
+        "fields": [
+            {
+                "name"  : "caracteristicas_do_condominio",
+                "label" : "Características do Condomínio",
+                "type"  : "checkbox",
+                "options" : [
+                    "Academia de ginástica",
+                    "Brinquedoteca",
+                    "Campo de futebol gramado",
+                    "Cerca elétrica",
+                    "Churrasqueira",
+                    "Cinema",
+                    "Elevador de serviço",
+                    "Elevador social",
+                    "Interfone",
+                    "Jacuzzi",
+                    "Lago",
+                    "Lan house",
+                    "Lanchonete",
+                    "Piscina adulto",
+                    "Piscina infantil",
+                    "Pista de caminhada",
+                    "Playground",
+                    "Portaria 24 horas",
+                    "Porteiro eletrônico",
+                    "Portão elétrico",
+                    "Quadra de areia",
+                    "Quadra de tênis",
+                    "Quadra poliesportiva",
+                    "Ronda motorizada",
+                    "Sala de jogos",
+                    "Salão de festas",
+                    "Salão de festas infantil",
+                    "Sauna",
+                    "Área verde preservada"
+                ]
+            }
+        ]
+    },
+    
+    {
+        "slug"  : "midia",
+        "group" : "Mídias",
+        "fields": [
+            {
+                "name"  : "video",
+                "label" : "Vídeo",
+                "type"  : "url"
+            },
+            {
+                "name"  : "360",
+                "label" : "360º",
+                "type"  : "url"
+            },
+            {
+                "name"  : "galeria_interior",
+                "label" : "Galeria de Imagens - Interior",
+                "type"  : "gallery"
+            },
+            {
+                "name"  : "galeria_exterior",
+                "label" : "Galeria de Imagens - Exterior",
+                "type"  : "gallery"
+            },
+            {
+                "name"  : "galeria_plantas",
+                "label" : "Galeria de Imagens - Plantas",
+                "type"  : "gallery"
+            }
+        ]
+    }
+
+]
